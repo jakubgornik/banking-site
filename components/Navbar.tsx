@@ -40,7 +40,7 @@ const Navbar = () => {
       <motion.div
         className={`fixed top-0 z-50 w-full`}
         animate={{
-          y: prevScrollY > 85 ? (navbarOpen ? 0 : -250) : 0,
+          y: prevScrollY > 85 ? (navbarOpen ? 0 : -260) : 0,
         }}
         transition={{ duration: 0.5 }}
       >
