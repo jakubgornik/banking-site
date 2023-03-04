@@ -1,6 +1,7 @@
 import { motion, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   const { scrollY } = useScroll();
@@ -103,12 +104,12 @@ const Navbar = () => {
           <button className="h-12 w-40 rounded-full border border-slate-900 bg-[#1D2B41] font-medium  text-white shadow-2xl transition-all duration-300 hover:opacity-80 mobile:hidden sm:block">
             Contact
           </button>
-          <div
+          <span
             onClick={mobileViewHandler}
-            className="cursor-pointer bg-white p-2 mobile:block sm:hidden"
+            className="cursor-pointer mobile:flex sm:hidden"
           >
-            Ham
-          </div>
+            <HamburgerMenu />
+          </span>
         </nav>
         <motion.ol
           className="text-center text-white backdrop-blur-sm"
