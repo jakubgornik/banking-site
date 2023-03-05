@@ -141,7 +141,7 @@ const Navbar = () => {
             style={{ opacity: mobileIsVisible ? 0 : 1 }}
             animate={{ opacity: mobileIsVisible ? 1 : 0 }}
             transition={{ duration: 0.5, delay: mobileIsVisible ? 0.4 : 0.2 }}
-            key="item-4"
+            key="item-3"
           >
             <Link href="">Reviews</Link>
           </motion.li>
