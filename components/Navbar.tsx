@@ -101,7 +101,7 @@ const Navbar = () => {
               <a href="/#">Events</a>
             </li>
           </ul>
-          <button className="h-12 w-40 rounded-full border border-slate-900 bg-[#1D2B41] font-medium  text-white shadow-2xl transition-all duration-300 hover:opacity-80 mobile:hidden sm:block">
+          <button className="h-12 w-40 rounded-full border border-slate-900   font-medium  text-white shadow-2xl transition-all duration-1000 hover:bg-mint hover:opacity-80 mobile:hidden sm:block">
             Contact
           </button>
           <span
