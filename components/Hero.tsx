@@ -22,9 +22,9 @@ const Hero = () => {
             <p className="text-md tracking-wide">
               Our experts awaits your call
             </p>
-            <span className="absolute -top-1 -right-1 flex h-3 w-3">
+            <span className="absolute top-[-3px] -right-1 flex h-4 w-4">
               <span className="absolute  inline-flex h-full w-full animate-ping rounded-full bg-mint opacity-75"></span>
-              <span className="absolute  inline-flex h-3 w-3 rounded-full bg-mint"></span>
+              <span className="absolute  inline-flex h-4 w-4 rounded-full bg-mint"></span>
             </span>
           </div>
         </div>
