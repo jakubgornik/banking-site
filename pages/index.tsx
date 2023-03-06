@@ -1,7 +1,8 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import NewTest from "@/components/NewTest";
 import Numbers from "@/components/Numbers";
+import BoxSection from "@/components/BoxSection";
+import { d2 as titleDescription, t4 as title4 } from "../utilities/util";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <Navbar />
         <Hero />
         <Numbers />
+        <BoxSection title={title4} titleDescription={titleDescription} />
         <div className="h-[5000px]"></div>
       </div>
     </>
