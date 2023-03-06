@@ -18,7 +18,7 @@ const Hero = () => {
             most likely to fit your needs. We examine annual percentage rates,
             annual fees.
           </p>
-          <div className="relative ml-3 mt-4 flex h-10 w-60 items-center justify-center rounded-full border-2 border-slate-900 bg-mint bg-transparent bg-opacity-30  text-white">
+          <div className="relative ml-3 mt-4 flex h-10 w-60 items-center justify-center rounded-lg border-2 border-slate-900 bg-mint bg-transparent bg-opacity-30  text-white">
             <p className="text-md tracking-wide">
               Our experts awaits your call
             </p>
