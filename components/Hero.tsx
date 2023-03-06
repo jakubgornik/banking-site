@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className="container mx-auto flex pt-[12rem] mobile:flex-col mobile:items-center mobile:space-x-0 md:flex-row md:justify-center md:space-x-5 lg:space-x-6">
         <div className="flex flex-col">
-          <h1 className=" min-w-[16rem] max-w-[29rem] px-4 leading-[1.1]  tracking-wide text-white  mobile:text-center mobile:text-[2.5rem] mobile-lg:text-left lg:text-6xl">
+          <h1 className=" min-w-[16rem] px-4 leading-[1.1] tracking-wide  text-white mobile:text-center  mobile:text-[2.5rem] mobile-lg:text-left lg:max-w-[31rem] lg:text-6xl">
             The Next{" "}
             <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
               Generation

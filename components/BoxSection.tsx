@@ -26,7 +26,7 @@ const BoxSection = ({ title, titleDescription }: Props) => {
             {titleDescription}
           </p>
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col items-center justify-center ">
           <BoxItem description={description} title={title1} img={starImg} />
           <BoxItem description={description} title={title2} img={shieldImg} />
           <BoxItem description={description} title={title3} img={transferImg} />
