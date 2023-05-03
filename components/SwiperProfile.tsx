@@ -1,12 +1,19 @@
 import React from "react";
 import PersonProfile from "./PersonProfile";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 import { Mousewheel } from "swiper";
 import { Autoplay } from "swiper";
 import { Grid } from "swiper";
 
 import "swiper/css";
+import person1 from "../img/person1.png";
+// import person2 from "../img/Mark.png";
+// import person3 from "../img/person2.png";
+// import person4 from "../img/person3.png";
+// import person5 from "../img/person4.png";
+// import person6 from "../img/person5.png";
+// import person7 from "../img/person6.png";
 // import "swiper/css/scrollbar";
 
 const SwiperProfile = () => {
@@ -24,97 +31,41 @@ const SwiperProfile = () => {
             <div className="max-w-[1440px]">
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
                 <SwiperSlide>
-                  <PersonProfile />
-                </SwiperSlide>
-              </div>
-              <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile />
-                </SwiperSlide>
-              </div>
-              <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile />
-                </SwiperSlide>
-              </div>
-              <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile />
+                  <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
             </div>
           </Swiper>
-          ;
-          {/* <Swiper
-            slidesPerView={4}
-            centeredSlides={true}
-            spaceBetween={30}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
-          </Swiper> */}
-          {/* <div className="swiper relative h-full">
-            <div className="swiper-wrapper mb-12 flex h-full">
-              <div className="swiper-slide mx-4 w-1/6 min-w-[250px] max-w-[280px]">
-                <PersonProfile />
-              </div>
-              <div className="swiper-slide mx-4 w-1/6 min-w-[250px] max-w-[280px]">
-                <PersonProfile />
-              </div>
-              <div className="swiper-slide mx-4 w-1/6 min-w-[250px] max-w-[280px]">
-                <PersonProfile />
-              </div>
-              <div className="swiper-slide mx-4 w-1/6 min-w-[250px] max-w-[280px]">
-                <PersonProfile />
-              </div>
-              <div className="swiper-slide mx-4 w-1/6 min-w-[250px] max-w-[280px]">
-                <PersonProfile />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
@@ -122,37 +73,3 @@ const SwiperProfile = () => {
 };
 
 export default SwiperProfile;
-
-// export default{
-//     data() {
-//         return {
-//             isHovered: false,
-//             profileDefault: true,
-//             swiperOptionsObject: {
-//                 modules: [Pagination, Mousewheel, Navigation, Autoplay, Grid],
-//                 spaceBetween: 16,
-//                 direction: "horizontal",
-//                 pagination: {
-//                     el: ".swiper-pagination",
-//                     type: "progressbar",
-//                 },
-//                 navigation: {
-//                     nextEl: ".swiper-button-next",
-//                     prevEl: ".swiper-button-prev",
-//                 },
-//                 slidesPerView: "auto",
-//             },
-//         };
-//     },
-//     mounted() {
-//         this.$data.swiper = new Swiper(".swiper", this.swiperOptionsObject);
-//     },
-//     methods: {
-//         toggleProfile() {
-//             this.profileDefault = !this.profileDefault;
-//         }
-//     },
-//     components: { SpeakerProfile }
-// }
-
-// </script>
