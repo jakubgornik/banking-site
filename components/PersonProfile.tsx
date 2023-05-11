@@ -5,9 +5,12 @@ import { StaticImageData } from "next/image";
 
 interface Props {
   profilePicture: StaticImageData;
+  fullName: string;
+  status: string;
+  title: string;
 }
 
-const PersonProfile = ({ profilePicture }: Props) => {
+const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
   const [isDescriptionOpened, setIsDescriptionOpened] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -49,14 +52,12 @@ const PersonProfile = ({ profilePicture }: Props) => {
                 fill="#39E8EA"
               />
             </svg>
-            <div className="ml-6 uppercase text-white">Joshua Marble</div>
+            <div className="ml-6 uppercase text-white">{fullName}</div>
           </div>
         </div>
 
-        <div className="mx-2 mt-4 font-semibold text-white">Director</div>
-        <div className=" mx-2 font-normal text-white">
-          Bank of Berlin, Germany
-        </div>
+        <div className="mx-2 mt-4 font-semibold text-white">{title}</div>
+        <div className=" mx-2 font-normal text-white">{status}</div>
         <div className="my-5 border-b-[1px] border-black"></div>
 
         {/* Text */}

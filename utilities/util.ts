@@ -5,3 +5,23 @@ export const boxSectionDescription: string =
 export const boxItemTitle1: string = "Rewards";
 export const boxItemTitle2: string = "Secured";
 export const boxItemTitle3: string = "Balanced";
+
+export const personProfileFullName1: string = "ALEX MARBLE";
+export const personProfileFullName2: string = "JOSHUA SOUTH";
+export const personProfileFullName3: string = "SARA JENKINS";
+export const personProfileFullName4: string = "ARNOLD WOZNIAK";
+export const personProfileFullName5: string = "ADAM GWOZDZ";
+export const personProfileFullName6: string = "ALEKSIEJ NOWOROV ";
+export const personProfileStatus1: string = "Bank of Berlin, Germany";
+export const personProfileStatus2: string = "University of Oslo, Norway";
+export const personProfileStatus3: string = "AGH University, Poland";
+export const personProfileStatus4: string = "Silesian Bank, Poland";
+export const personProfileStatus5: string = "Bank of Berlin, Germany";
+export const personProfileStatus6: string = "FutureBank, Ukraine";
+
+export const personProfileOcupation1: string = "Manager";
+export const personProfileOcupation2: string = "Professor";
+export const personProfileOcupation3: string = "Student";
+export const personProfileOcupation4: string = "Sales Director";
+export const personProfileOcupation5: string = "Chairman";
+export const personProfileOcupation6: string = "CEO";
