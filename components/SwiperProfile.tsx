@@ -5,20 +5,17 @@ import { Navigation } from "swiper";
 import { Mousewheel } from "swiper";
 import { Autoplay } from "swiper";
 import { Grid } from "swiper";
-
 import "swiper/css";
-import person1 from "../img/person1.png";
-// import person2 from "../img/Mark.png";
-// import person3 from "../img/person2.png";
-// import person4 from "../img/person3.png";
-// import person5 from "../img/person4.png";
-// import person6 from "../img/person5.png";
-// import person7 from "../img/person6.png";
-// import "swiper/css/scrollbar";
+import person1 from "../img/portraits/person1.jpeg";
+import person3 from "../img/portraits/person3.jpeg";
+import person4 from "../img/portraits/person4.jpeg";
+import person5 from "../img/portraits/person5.jpeg";
+import person6 from "../img/portraits/person6.jpeg";
+import person7 from "../img/portraits/person7.jpeg";
 
 const SwiperProfile = () => {
   return (
-    <div className="w-full py-20">
+    <div className="w-full pb-28  2xl:pb-36">
       <div className="overflow-hidden px-10 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-[1440px]">
           <Swiper
@@ -26,41 +23,42 @@ const SwiperProfile = () => {
             spaceBetween={32}
             slidesPerView="auto"
             direction="horizontal"
+            autoplay
             scrollbar={{ draggable: true }}
           >
             <div className="max-w-[1440px]">
               <div className="max-w-[250px]">
-                <SwiperSlide>
+                <SwiperSlide key={1}>
                   <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile profilePicture={person1} />
+                <SwiperSlide key={2}>
+                  <PersonProfile profilePicture={person7} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile profilePicture={person1} />
+                <SwiperSlide key={3}>
+                  <PersonProfile profilePicture={person3} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile profilePicture={person1} />
+                <SwiperSlide key={4}>
+                  <PersonProfile profilePicture={person4} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile profilePicture={person1} />
+                <SwiperSlide key={5}>
+                  <PersonProfile profilePicture={person5} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
-                <SwiperSlide>
-                  <PersonProfile profilePicture={person1} />
+                <SwiperSlide key={6}>
+                  <PersonProfile profilePicture={person6} />
                 </SwiperSlide>
               </div>
               <div className="max-w-[250px]">
-                <SwiperSlide>
+                <SwiperSlide key={7}>
                   <PersonProfile profilePicture={person1} />
                 </SwiperSlide>
               </div>

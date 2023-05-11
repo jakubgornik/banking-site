@@ -1,13 +1,13 @@
 import Image from "next/image";
-import team from "../img/team.png";
+import team from "../img/hero.png";
 
 const Hero = () => {
   return (
     <div className="w-full">
-      <div className="px-10 lg:px-16 xl:px-20">
+      <div className="px-10 pb-28 lg:px-16 xl:px-20 2xl:pb-36">
         <div className=" mx-auto flex max-w-[1440px] pt-[12rem] mobile:flex-col mobile:items-center mobile:space-x-0 md:flex-row md:justify-center md:space-x-5 lg:space-x-6 xl:justify-between">
           <div className="flex flex-col">
-            <h1 className=" min-w-[16rem]  leading-[1.1] tracking-wide  text-white mobile:text-center  mobile:text-[2.5rem] mobile-lg:text-left lg:max-w-[31rem] lg:text-6xl">
+            <h1 className=" max-w-[30rem]  leading-[1.1] tracking-wide  text-white mobile:text-center  mobile:text-[2.5rem] mobile-lg:text-left lg:max-w-[31rem] lg:text-6xl">
               The Next{" "}
               <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
                 Generation
@@ -35,6 +35,7 @@ const Hero = () => {
             alt="Team of employees"
             width={450}
             height={450}
+            priority
           />
         </div>
       </div>

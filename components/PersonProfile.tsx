@@ -24,15 +24,14 @@ const PersonProfile = ({ profilePicture }: Props) => {
   };
   return (
     <>
-      <div className=" max-w-[250px] bg-gradient-to-tr from-[#1D2B41] to-[#002738]">
-        <div className="relative">
+      <div className="max-w-[250px] bg-gradient-to-tr from-[#1D2B41] to-[#002738]">
+        <div className="relative" style={{ height: "100%", width: "100%" }}>
           {/* img */}
-          <div className="z-100 relative block transition-all duration-500  after:pointer-events-none after:absolute after:inset-0 after:z-40 after:h-full after:w-full after:bg-gradient-to-t after:from-[#002738]/40 after:to-[#F7F9F9]/20 after:content-['']">
+          <div className="z-100 relative block transition-all duration-500  after:pointer-events-none after:absolute after:inset-0 after:z-40 after:bg-gradient-to-t after:from-[#002738]/40 after:to-[#1D2B41]/20 after:content-['']">
             <Image
               src={profilePicture}
               alt="Person profile"
-              height="500"
-              width="250"
+              style={{ height: "350px", width: "250px", objectFit: "fill" }}
             />
           </div>
           {/* Header */}
