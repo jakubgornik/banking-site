@@ -38,7 +38,7 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
             />
           </div>
           {/* Header */}
-          <div className="absolute bottom-1 left-2 z-40 flex">
+          <div className="absolute bottom-1 left-3 z-40 flex">
             <svg
               className="absolute -top-1"
               width="22"
@@ -56,13 +56,13 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
           </div>
         </div>
 
-        <div className="mx-2 mt-4 font-semibold text-white">{title}</div>
-        <div className=" mx-2 font-normal text-white">{status}</div>
+        <div className="mx-4 mt-4 font-semibold text-white">{title}</div>
+        <div className=" mx-4 font-normal text-white">{status}</div>
         <div className="my-5 border-b-[1px] border-black"></div>
 
         {/* Text */}
         {isDescriptionOpened && (
-          <div className="mx-2 max-w-xs text-left text-white">
+          <div className="mx-4 max-w-xs text-left text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -72,7 +72,7 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
           </div>
         )}
         {!isDescriptionOpened && (
-          <div className="mx-2 max-w-xs text-left text-white">
+          <div className="mx-4 max-w-xs text-left text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             distinctio numquam accusamus quidem fugiat.
           </div>

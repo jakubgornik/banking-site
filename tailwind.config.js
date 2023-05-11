@@ -11,7 +11,7 @@ module.exports = {
         mint: "#39E8EA",
       },
       fontFamily: {
-        sans: '"Roboto", sans-serif',
+        serif: "ui-serif",
       },
     },
     screens: {

@@ -33,7 +33,7 @@ const Hero = () => {
             className="px-4 mobile:pt-8 md:pt-0"
             src={team}
             alt="Team of employees"
-            width={600}
+            width={650}
             sizes="(min-width: 768px) 400px"
             priority
           />

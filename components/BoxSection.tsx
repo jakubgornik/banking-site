@@ -13,7 +13,7 @@ import {
 const BoxSection = () => {
   return (
     <div className="w-full">
-      <div className="px-10 pb-28 lg:px-16 xl:px-20  2xl:pb-36">
+      <div className="px-10  lg:px-16 xl:px-20  ">
         <div className=" mx-auto flex max-w-[1440px] justify-center mobile:flex-col mobile:space-y-8 mobile:space-x-0  md:flex-row md:space-y-0 md:space-x-16  xl:justify-between ">
           {/* BoxSection Header */}
           <div className="flex flex-col mobile:pb-8 md:pb-0">
