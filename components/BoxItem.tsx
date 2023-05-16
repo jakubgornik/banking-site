@@ -8,7 +8,7 @@ interface Props {
 
 const BoxItem = ({ img, description, title }: Props) => {
   return (
-    <div className="mb-3 flex  items-center gap-6 rounded-lg border border-slate-900  px-4 py-6 transition-all duration-1000 hover:bg-mint hover:bg-opacity-60">
+    <div className="mb-3 flex  items-center gap-6 rounded-lg border-2 border-[#1D2B41] px-4 py-6 transition-all duration-1000 hover:bg-mint hover:bg-opacity-60">
       <div className="flex h-10 w-10  shrink-0 items-center justify-center rounded-full bg-gray-800 ">
         <Image src={img} alt="supporting icon" width={20} height={20} />
       </div>

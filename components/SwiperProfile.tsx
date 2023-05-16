@@ -36,7 +36,7 @@ import person7 from "../img/portraits/person7.jpeg";
 const SwiperProfile = () => {
   return (
     <div>
-      <div className="w-full py-28  2xl:py-36">
+      <div className="w-full pb-28  2xl:pb-36">
         <div className="overflow-hidden px-10 lg:px-16 xl:px-20">
           <div className="mx-auto max-w-[1440px]">
             <Swiper

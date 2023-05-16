@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Numbers from "@/components/Numbers";
 import BoxSection from "@/components/BoxSection";
 import SwiperProfile from "@/components/SwiperProfile";
+import GridSection from "@/components/GridSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Numbers />
         <BoxSection />
         <SwiperProfile />
+        <GridSection />
       </div>
     </>
   );

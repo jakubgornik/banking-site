@@ -34,7 +34,7 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
             <Image
               src={profilePicture}
               alt="Person profile"
-              style={{ height: "350px", width: "250px", objectFit: "fill" }}
+              style={{ height: "340px", width: "250px", objectFit: "fill" }}
             />
           </div>
           {/* Header */}

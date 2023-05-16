@@ -25,3 +25,12 @@ export const personProfileOcupation3: string = "Student";
 export const personProfileOcupation4: string = "Sales Director";
 export const personProfileOcupation5: string = "Chairman";
 export const personProfileOcupation6: string = "CEO";
+
+export const gridHeader1: string = "Projects";
+export const gridHeader2: string = "Synchronized";
+export const gridHeader3: string = "Great UI";
+export const gridHeader4: string = "Features";
+export const gridHeader5: string = "Powerful";
+export const gridHeader6: string = "Updates";
+export const gridLorem: string =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aperiam ipsum distinctio nesciunt eos quam.";
