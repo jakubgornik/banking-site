@@ -21,12 +21,12 @@ const BoxSection = () => {
               You do the
               <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
                 {" "}
-                business
+                Business
               </span>
               , we'll handle the{" "}
               <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
                 {" "}
-                money.
+                Money
               </span>
             </h2>
             <p className="text-md  text-white mobile:max-w-sm mobile:text-justify mobile:text-base md:max-w-[20rem]">

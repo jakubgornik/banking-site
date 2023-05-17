@@ -25,7 +25,7 @@ const GridSection = () => {
               What distinguish
               <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
                 {" "}
-                easybank
+                Easybank
               </span>
             </h2>
           </div>

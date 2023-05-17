@@ -12,7 +12,7 @@ const Hero = () => {
               <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
                 Generation
               </span>{" "}
-              Banking.
+              Banking
             </h1>
             <p className="max-w-sm  pt-8 text-3xl text-[#FFFFFF] mobile:text-justify mobile:text-base sm:text-left sm:text-lg">
               Our team of experts uses a methodology to identify the credit
