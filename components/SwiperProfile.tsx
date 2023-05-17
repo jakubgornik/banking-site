@@ -36,9 +36,18 @@ import person7 from "../img/portraits/person7.jpeg";
 const SwiperProfile = () => {
   return (
     <div>
-      <div className="w-full pb-28  2xl:pb-36">
+      <div id="reviews" className="w-full pb-28  2xl:pb-36">
         <div className="overflow-hidden px-10 lg:px-16 xl:px-20">
           <div className="mx-auto max-w-[1440px]">
+            <div>
+              <h2 className=" max-w-[30rem]  pb-10 text-4xl leading-[1.1] tracking-wide text-white mobile:text-center mobile-lg:text-left ">
+                Reviews of our
+                <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
+                  {" "}
+                  Clients
+                </span>
+              </h2>
+            </div>
             <Swiper
               modules={[Mousewheel, Navigation, Autoplay, Grid]}
               spaceBetween={32}

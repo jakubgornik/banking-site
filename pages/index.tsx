@@ -4,6 +4,7 @@ import Numbers from "@/components/Numbers";
 import BoxSection from "@/components/BoxSection";
 import SwiperProfile from "@/components/SwiperProfile";
 import GridSection from "@/components/GridSection";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,8 @@ const Home = () => {
         <BoxSection />
         <SwiperProfile />
         <GridSection />
+        {/* To do cta form events */}
+        <Footer />
       </div>
     </>
   );

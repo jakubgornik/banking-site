@@ -45,7 +45,7 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <nav className="flex w-full items-center justify-around border-b border-b-slate-900 backdrop-blur-sm transition-all mobile:py-8 sm:py-0">
-          <Link href="#" className="px-8">
+          <Link scroll={false} href="#home" className="px-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="139"
@@ -88,21 +88,32 @@ const Navbar = () => {
           </Link>
 
           <ul className="flex cursor-pointer space-x-4 font-medium text-white mobile:hidden sm:flex">
-            <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
-              <a href="/#home">Home</a>
-            </li>
-            <li className="border-b border-b-transparent  py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
-              <a href="/#about">About</a>
-            </li>
-            <li className="border-b border-b-transparent  py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
-              <a href="/#contact">Reviews</a>
-            </li>
-            <li className="border-b border-b-transparent  py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
-              <a href="/#">Events</a>
-            </li>
+            <Link scroll={false} href="#home">
+              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+                Home
+              </li>
+            </Link>
+
+            <Link scroll={false} href="#about">
+              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+                About
+              </li>
+            </Link>
+            <Link scroll={false} href="#reviews">
+              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+                Reviews
+              </li>
+            </Link>
+            <Link scroll={false} href="#events">
+              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+                Events
+              </li>
+            </Link>
           </ul>
           <button className="h-12 w-40 rounded-full border border-slate-900   font-medium  text-white shadow-2xl transition-all duration-1000 hover:bg-mint hover:bg-opacity-60 mobile:hidden sm:block">
-            Contact
+            <Link scroll={false} href="#contact">
+              Contact
+            </Link>
           </button>
           <span
             onClick={mobileViewHandler}
@@ -125,7 +136,9 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: mobileIsVisible ? 0 : 0.6 }}
             key="item-1"
           >
-            <Link href="">Home</Link>
+            <Link scroll={false} href="#home">
+              Home
+            </Link>
           </motion.li>
           <motion.li
             className="border-b border-slate-900 py-2 transition-colors duration-300 hover:text-mint"
@@ -134,7 +147,9 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: mobileIsVisible ? 0.2 : 0.4 }}
             key="item-2"
           >
-            <Link href="">About</Link>
+            <Link scroll={false} href="#about">
+              About
+            </Link>
           </motion.li>
           <motion.li
             className="border-b border-slate-900 py-2 transition-colors duration-300 hover:text-mint"
@@ -143,7 +158,9 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: mobileIsVisible ? 0.4 : 0.2 }}
             key="item-3"
           >
-            <Link href="">Reviews</Link>
+            <Link scroll={false} href="#reviews">
+              Reviews
+            </Link>
           </motion.li>
           <motion.li
             className="border-b border-slate-900 py-2 transition-colors duration-300 hover:text-mint"
@@ -152,7 +169,9 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: mobileIsVisible ? 0.6 : 0 }}
             key="item-4"
           >
-            <Link href="">Events</Link>
+            <Link scroll={false} href="#events">
+              Events
+            </Link>
           </motion.li>
         </motion.ol>
       </motion.div>

@@ -27,9 +27,8 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
   };
   return (
     <>
-      <div className="max-w-[250px] bg-gradient-to-tr from-[#1D2B41] to-[#002738]">
+      <div className="max-w-[250px] bg-gradient-to-tr from-slate-900 to-[#002738]">
         <div className="relative" style={{ height: "100%", width: "100%" }}>
-          {/* img */}
           <div className="z-100 relative block transition-all duration-500  after:pointer-events-none after:absolute after:inset-0 after:z-40 after:bg-gradient-to-t after:from-[#002738]/40 after:to-[#1D2B41]/20 after:content-['']">
             <Image
               src={profilePicture}
@@ -37,7 +36,7 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
               style={{ height: "340px", width: "250px", objectFit: "fill" }}
             />
           </div>
-          {/* Header */}
+
           <div className="absolute bottom-1 left-3 z-40 flex">
             <svg
               className="absolute -top-1"
@@ -60,7 +59,6 @@ const PersonProfile = ({ profilePicture, fullName, status, title }: Props) => {
         <div className=" mx-4 font-normal text-white">{status}</div>
         <div className="my-5 border-b-[1px] border-black"></div>
 
-        {/* Text */}
         {isDescriptionOpened && (
           <div className="mx-4 max-w-xs text-left text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
