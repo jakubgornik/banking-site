@@ -5,6 +5,7 @@ import BoxSection from "@/components/BoxSection";
 import SwiperProfile from "@/components/SwiperProfile";
 import GridSection from "@/components/GridSection";
 import Footer from "@/components/Footer";
+import Form from "@/components/Form";
 
 const Home = () => {
   return (
@@ -15,8 +16,10 @@ const Home = () => {
         <Numbers />
         <BoxSection />
         <SwiperProfile />
+        {/* To do valdiation post data to db aniamte form display form below on lg: */}
+        <Form />
         <GridSection />
-        {/* To do cta form events */}
+        {/* To do cta events */}
         <Footer />
       </div>
     </>

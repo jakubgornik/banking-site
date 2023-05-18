@@ -31,6 +31,25 @@ const Footer = () => {
               </Link>
               <Link target="#" href="https://www.twitter.com/">
                 <Image alt="facebook icon" src={twitterIcon} />
+                {/* <svg
+                  width="34"
+                  height="15"
+                  viewBox="0 0 34 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2812 14L25.9131 7.50003L19.2812 1"
+                    stroke="black"
+                  ></path>
+                  <line
+                    x1="25.5"
+                    y1="7.5"
+                    x2="6.5"
+                    y2="7.5"
+                    stroke="black"
+                  ></line>
+                </svg> */}
               </Link>
             </div>
           </div>
@@ -51,16 +70,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center justify-between font-semibold text-white mobile:space-x-2  mobile-lg:space-x-4 sm:space-x-6 xl:justify-start xl:space-x-48 ">
-            <Link href="#">
+            <Link scroll={false} href="#home">
               <p className="duration-500 hover:text-mint">Home</p>
             </Link>
-            <Link href="#about">
+            <Link scroll={false} href="#about">
               <p className="duration-500 hover:text-mint">About</p>
             </Link>
-            <Link href="#reviews">
+            <Link scroll={false} href="#reviews">
               <p className="duration-500 hover:text-mint">Reviews</p>
             </Link>
-            <Link href="#events">
+            <Link scroll={false} href="#events">
               <p className="duration-500 hover:text-mint">Events</p>
             </Link>
           </div>
