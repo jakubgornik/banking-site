@@ -36,7 +36,7 @@ import person7 from "../img/portraits/person7.jpeg";
 const SwiperSection = () => {
   return (
     <div>
-      <div id="reviews" className="w-full pb-28  2xl:pb-36">
+      <div id="reviews" className="w-full pb-28  ">
         <div className="overflow-hidden px-10 lg:px-16 xl:px-20">
           <div className="mx-auto max-w-[1440px]">
             <div>

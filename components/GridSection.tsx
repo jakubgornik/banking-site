@@ -17,7 +17,7 @@ import {
 
 const GridSection = () => {
   return (
-    <div className="w-full pb-28  2xl:pb-36">
+    <div className="w-full pb-28 ">
       <div className="px-10 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-[1440px]">
           <div>
