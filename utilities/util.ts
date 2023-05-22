@@ -34,3 +34,7 @@ export const gridHeader5: string = "Powerful";
 export const gridHeader6: string = "Updates";
 export const gridLorem: string =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aperiam ipsum distinctio nesciunt eos quam.";
+
+export const contactDescription1: string = "We've been expecting you";
+export const contactDescription2: string = "We are ideal fit for you";
+export const contactDescription3: string = "What you need to know";

@@ -33,7 +33,7 @@ import person5 from "../img/portraits/person5.jpeg";
 import person6 from "../img/portraits/person6.jpeg";
 import person7 from "../img/portraits/person7.jpeg";
 
-const SwiperProfile = () => {
+const SwiperSection = () => {
   return (
     <div>
       <div id="reviews" className="w-full pb-28  2xl:pb-36">
@@ -136,4 +136,4 @@ const SwiperProfile = () => {
   );
 };
 
-export default SwiperProfile;
+export default SwiperSection;
