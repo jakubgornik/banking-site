@@ -15,11 +15,9 @@ const Home = () => {
         <Hero />
         <Numbers />
         <BoxSection />
-        <SwiperSection />
-        {/* To do valdiation post data to db aniamte form display form below on lg: */}
         <ContactSection />
+        <SwiperSection />
         <GridSection />
-        {/* To do cta events */}
         <Footer />
       </div>
     </>

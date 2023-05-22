@@ -1,4 +1,4 @@
-const FormModal = () => {
+const ContactSectionForm = () => {
   return (
     <>
       <div className="flex flex-col">
@@ -12,7 +12,7 @@ const FormModal = () => {
               htmlFor="full-name"
               className="ml-[50px] self-start font-semibold text-white"
             >
-              Full name *
+              Full name*
             </label>
             <div className="relative flex w-3/4 flex-col pb-8 pt-2 text-left">
               <input
@@ -48,7 +48,7 @@ const FormModal = () => {
               htmlFor="email"
               className="ml-[50px] self-start font-semibold text-white"
             >
-              Email *
+              Email*
             </label>
             <div className="relative flex w-3/4 flex-col pb-8 pt-2 text-left">
               <input
@@ -84,7 +84,7 @@ const FormModal = () => {
               htmlFor="phone-number"
               className="ml-[50px] self-start font-semibold text-white"
             >
-              Email *
+              Phone*
             </label>
             <div className="relative flex w-3/4 flex-col pb-8 pt-2 text-left">
               <input
@@ -122,4 +122,4 @@ const FormModal = () => {
   );
 };
 
-export default FormModal;
+export default ContactSectionForm;
