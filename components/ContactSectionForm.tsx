@@ -1,11 +1,67 @@
+import {
+  fullNameValidationSchema,
+  emailValidationSchema,
+  phoneValidationSchema,
+} from "@/utilities/validationSchemas";
+import { useState } from "react";
+
 const ContactSectionForm = () => {
+  const [enteredFormData, setEnteredFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+  });
+
+  const [validationData, setValidationData] = useState({
+    fullNameValidation: true,
+    emailValidation: true,
+    phoneValidation: true,
+  });
+
+  const handleFullNameValidation = async () => {
+    const isFullNameValid = await fullNameValidationSchema.isValid({
+      fullName: enteredFormData.fullName,
+    });
+    setValidationData((prevData) => ({
+      ...prevData,
+      fullNameValidation: isFullNameValid,
+    }));
+  };
+
+  const handleEmailValidation = async () => {
+    const isEmailValid = await emailValidationSchema.isValid({
+      email: enteredFormData.email,
+    });
+    setValidationData((prevData) => ({
+      ...prevData,
+      emailValidation: isEmailValid,
+    }));
+  };
+
+  const handlePhoneNumberValidation = async () => {
+    const isPhoneNumberValid = await phoneValidationSchema.isValid({
+      phone: enteredFormData.phoneNumber,
+    });
+    setValidationData((prevData) => ({
+      ...prevData,
+      phoneValidation: isPhoneNumberValid,
+    }));
+  };
+
+  // ...
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // ...
+  };
+
   return (
     <>
       <div className="flex flex-col">
         <span className="bg-gradient-to-bl from-[#1D2B41] to-mint bg-clip-text py-4 text-center text-2xl font-extrabold tracking-wide text-transparent">
           Provide data for contact
         </span>
-        <form>
+        <form onSubmit={handleFormSubmit}>
           <div className="flex flex-col items-center ">
             {/* Full name todo valdiation */}
             <label

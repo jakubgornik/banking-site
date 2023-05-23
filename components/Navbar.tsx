@@ -110,7 +110,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <button className="h-12 w-40 rounded-full border border-slate-900   font-medium  text-white shadow-2xl transition-all duration-1000 hover:bg-mint hover:bg-opacity-60 mobile:hidden sm:block">
+          <button className="h-12 w-40 rounded-full border border-mint   font-medium  text-white shadow-2xl transition-all duration-1000 hover:bg-mint hover:bg-opacity-60 mobile:hidden sm:block">
             <Link scroll={false} href="#contact">
               Contact
             </Link>
@@ -123,16 +123,14 @@ const Navbar = () => {
           </span>
         </nav>
         <motion.ol
-          className={`${
-            mobileIsVisible ? "block" : "hidden"
-          } text-center text-white backdrop-blur-sm`}
+          className={` text-center text-white backdrop-blur-sm`}
           initial={hasRendered && { opacity: mobileIsVisible ? 0 : 1 }}
           animate={{ opacity: mobileIsVisible ? 1 : 0 }}
           transition={{ duration: 2 }}
           key={mobileIsVisible ? "menu-open" : "menu-closed"}
         >
           <motion.li
-            className="border-b border-slate-900 py-2 transition-colors duration-300 hover:text-mint"
+            className={`border-b border-slate-900 py-2 transition-colors duration-300 hover:text-mint`}
             style={{ opacity: mobileIsVisible ? 0 : 1 }}
             animate={{ opacity: mobileIsVisible ? 1 : 0 }}
             transition={{ duration: 0.5, delay: mobileIsVisible ? 0 : 0.6 }}
