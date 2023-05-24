@@ -28,7 +28,6 @@ const ContactSectionForm = () => {
   };
 
   const handleSubmit = async () => {
-    console.log("psoted");
     const response = await fetch(
       "https://easybanking-caca4-default-rtdb.europe-west1.firebasedatabase.app/contact-data.json",
       {

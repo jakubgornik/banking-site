@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 interface Props {
   title: string;
 }
@@ -5,7 +6,13 @@ interface Props {
 const ContactSectionBox = ({ title }: Props) => {
   return (
     <>
-      <div className="mx-auto max-w-[1440px]">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="mx-auto max-w-[1440px]"
+      >
         <div className="z-10 px-12 py-14">
           <div className="relative flex max-w-[500px] flex-col gap-8 text-white">
             <svg
@@ -47,7 +54,7 @@ const ContactSectionBox = ({ title }: Props) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

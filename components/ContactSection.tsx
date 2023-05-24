@@ -6,7 +6,7 @@ import {
   contactDescription3,
 } from "@/utilities/util";
 import { useState, useEffect } from "react";
-import { useScroll } from "framer-motion";
+import { useScroll, motion } from "framer-motion";
 
 const Form = () => {
   const [isFixed, setIsFixed] = useState<boolean>();
@@ -16,16 +16,16 @@ const Form = () => {
   useEffect(() => {
     const onScroll = () => {
       const currentScrollY = scrollY.get();
-      // console.log(currentScrollY);
-      if (currentScrollY > 1450 && currentScrollY < 2100) {
+      console.log(currentScrollY);
+      if (currentScrollY > 1590 && currentScrollY < 2240) {
         setIsFixed(true);
       } else {
         setIsFixed(false);
       }
 
-      if (currentScrollY > 2100) {
+      if (currentScrollY > 2240) {
         setIsBottom(true);
-      } else if (currentScrollY < 1450) {
+      } else if (currentScrollY < 1590) {
         setIsBottom(false);
       }
     };
@@ -54,9 +54,15 @@ const Form = () => {
         <ContactSectionBox title={contactDescription3} />
       </div>
       <div className="w-full rounded-b-[100px] bg-gradient-to-br from-slate-900 to-[#002738]  py-14 xl:hidden">
-        <div className="mx-auto h-[600px] w-[300px] max-w-[1440px] rounded-lg border-2 border-slate-900  shadow-2xl backdrop-blur-lg sm:w-[400px]">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mx-auto h-[600px] w-[300px] max-w-[1440px] rounded-lg border-2 border-slate-900  shadow-2xl backdrop-blur-lg sm:w-[400px]"
+        >
           <ContactSectionForm />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -14,11 +14,18 @@ import {
   gridHeader6,
   gridLorem,
 } from "@/utilities/util";
+import { motion } from "framer-motion";
 
 const GridSection = () => {
   return (
     <div className="w-full pb-28 ">
-      <div className="px-10 lg:px-16 xl:px-20">
+      <motion.div
+        className="px-10 lg:px-16 xl:px-20"
+        initial={{ y: -100, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="mx-auto max-w-[1440px]">
           <div>
             <h2 className=" max-w-[30rem]  pb-10 text-4xl leading-[1.1] tracking-wide text-white mobile:text-center mobile-lg:text-left ">
@@ -62,7 +69,7 @@ const GridSection = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
