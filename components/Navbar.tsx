@@ -123,7 +123,7 @@ const Navbar = () => {
           </span>
         </nav>
         <motion.ol
-          className={` text-center text-white backdrop-blur-sm`}
+          className={`block text-center text-white backdrop-blur-sm sm:hidden`}
           initial={hasRendered && { opacity: mobileIsVisible ? 0 : 1 }}
           animate={{ opacity: mobileIsVisible ? 1 : 0 }}
           transition={{ duration: 2 }}

@@ -24,3 +24,8 @@
 .swiper-slide {
   max-width: 250px;
 }
+
+.float-label-input:focus-within label,
+.float-label-input input:not(:placeholder-shown) + label {
+  transform: translateY(-2.2rem) translateX(-1rem);
+}
