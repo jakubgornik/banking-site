@@ -32,14 +32,14 @@ const Form = () => {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [scrollY]);
 
   return (
     <div className="relative mb-28 w-full ">
       <div
-        className={`
-        ${isFixed ? "fixed " : "absolute"}  
-         ${isBottom && !isFixed ? "bottom-[4rem]" : "top-[5.5rem]"}
+        className={`${isFixed ? "fixed " : "absolute"}  ${
+          isBottom && !isFixed ? "bottom-[4rem]" : "top-[5.5rem]"
+        }
            left-[60%]  z-10 mx-auto  hidden h-[500px] w-[400px]  max-w-[1440px] rounded-2xl border-2 border-slate-900 shadow-2xl backdrop-blur-lg xl:block`}
       >
         <ContactSectionForm />

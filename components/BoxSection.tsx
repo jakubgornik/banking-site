@@ -29,7 +29,7 @@ const BoxSection = () => {
                 {" "}
                 Business
               </span>
-              , we'll handle the{" "}
+              , we will handle the
               <span className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text font-extrabold text-transparent">
                 {" "}
                 Money

@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-6 border-b border-b-[#1D2B41]  pb-6 sm:flex-row sm:justify-between sm:space-y-0 ">
             <div className="flex items-center gap-4">
               <span className="text-xl font-semibold text-white">
-                Let's talk
+                Lets talk
               </span>
               <button className="h-12 w-40 rounded-full border border-mint  font-medium  text-white shadow-2xl transition-all duration-1000 hover:bg-mint hover:bg-opacity-60 ">
                 <Link href="#contact">Contact</Link>
@@ -31,25 +31,6 @@ const Footer = () => {
               </Link>
               <Link target="#" href="https://www.twitter.com/">
                 <Image alt="facebook icon" src={twitterIcon} />
-                {/* <svg
-                  width="34"
-                  height="15"
-                  viewBox="0 0 34 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.2812 14L25.9131 7.50003L19.2812 1"
-                    stroke="black"
-                  ></path>
-                  <line
-                    x1="25.5"
-                    y1="7.5"
-                    x2="6.5"
-                    y2="7.5"
-                    stroke="black"
-                  ></line>
-                </svg> */}
               </Link>
             </div>
           </div>
