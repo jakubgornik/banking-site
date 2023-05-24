@@ -27,6 +27,20 @@ const ContactSectionForm = () => {
     }));
   };
 
+  const handleSubmit = async () => {
+    console.log("psoted");
+    const response = await fetch(
+      "https://easybanking-caca4-default-rtdb.europe-west1.firebasedatabase.app/contact-data.json",
+      {
+        method: "POST",
+        body: JSON.stringify(enteredFormData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  };
+
   const handleFullNameValidation = async () => {
     const isFullNameValid = await fullNameValidationSchema.isValid({
       fullName: enteredFormData.fullName,
@@ -59,7 +73,7 @@ const ContactSectionForm = () => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // ...
+    handleSubmit();
   };
 
   return (
@@ -158,6 +172,7 @@ const ContactSectionForm = () => {
               )}
             </div>
             <button
+              type="submit"
               disabled={
                 !validationData.fullNameValidation ||
                 !validationData.emailValidation ||

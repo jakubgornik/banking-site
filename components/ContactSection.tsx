@@ -16,7 +16,7 @@ const Form = () => {
   useEffect(() => {
     const onScroll = () => {
       const currentScrollY = scrollY.get();
-      console.log(currentScrollY);
+      // console.log(currentScrollY);
       if (currentScrollY > 1450 && currentScrollY < 2100) {
         setIsFixed(true);
       } else {
