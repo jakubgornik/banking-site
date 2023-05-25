@@ -7,7 +7,7 @@ const ContactSectionBox = ({ title }: Props) => {
   return (
     <>
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
+        initial={{ x: -50, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}

@@ -44,7 +44,7 @@ const Form = () => {
       >
         <ContactSectionForm />
       </div>
-      <div className=" rounded-t-[100px] bg-gradient-to-tr  from-slate-900 to-[#002738] px-10 lg:px-16 xl:px-20">
+      <div className=" rounded-t-[50px] bg-gradient-to-tr from-slate-900  to-[#002738] px-10 sm:rounded-t-[100px] lg:px-16 xl:px-20">
         <ContactSectionBox title={contactDescription1} />
       </div>
       <div className=" bg-gradient-to-tr from-slate-900 to-[#002738] px-10 lg:px-16 xl:px-20">
@@ -53,9 +53,9 @@ const Form = () => {
       <div className="bg-gradient-to-tr from-slate-900  to-[#002738] px-10 lg:px-16  xl:rounded-b-[100px] xl:px-20">
         <ContactSectionBox title={contactDescription3} />
       </div>
-      <div className="w-full rounded-b-[100px] bg-gradient-to-br from-slate-900 to-[#002738]  py-14 xl:hidden">
+      <div className="w-full rounded-b-[50px] bg-gradient-to-br from-slate-900 to-[#002738] py-14  sm:rounded-b-[100px] xl:hidden">
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 25, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

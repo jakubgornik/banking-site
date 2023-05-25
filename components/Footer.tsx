@@ -8,7 +8,7 @@ import twitterIcon from "../img/icons/twitter.png";
 const Footer = () => {
   return (
     <footer className="w-full">
-      <div className="rounded-t-[100px] bg-gradient-to-tr from-slate-900 to-[#002738] px-10 pb-8 pt-8 lg:px-16 xl:rounded-t-[150px] xl:px-20">
+      <div className="rounded-t-[50px] bg-gradient-to-tr from-slate-900 to-[#002738] px-10 pb-8 pt-8 sm:rounded-t-[100px] lg:px-16 xl:rounded-t-[150px] xl:px-20">
         <div className=" mx-auto flex max-w-[1440px] flex-col space-y-6">
           <div className="flex flex-col items-center space-y-6 border-b border-b-[#1D2B41]  pb-6 sm:flex-row sm:justify-between sm:space-y-0 ">
             <div className="flex items-center gap-4">

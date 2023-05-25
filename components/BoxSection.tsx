@@ -17,7 +17,7 @@ const BoxSection = () => {
       <div className="px-10 pb-28 lg:px-16 xl:px-20  ">
         <div className=" mx-auto flex max-w-[1440px] justify-center mobile:flex-col mobile:space-y-8 mobile:space-x-0  md:flex-row md:space-y-0 md:space-x-16  xl:justify-between ">
           <motion.div
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -25, opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -40,7 +40,7 @@ const BoxSection = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -25, opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
