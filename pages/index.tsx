@@ -6,18 +6,24 @@ import SwiperSection from "@/components/SwiperSection";
 import GridSection from "@/components/GridSection";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Numbers />
-      <BoxSection />
-      <ContactSection />
-      <SwiperSection />
-      <GridSection />
-      <Footer />
+      <Head>
+        <title>{"EasyBank - Next Gen Banking"}</title>
+      </Head>
+      <main>
+        <Navbar />
+        <Hero />
+        <Numbers />
+        <BoxSection />
+        <ContactSection />
+        <SwiperSection />
+        <GridSection />
+        <Footer />
+      </main>
     </>
   );
 };

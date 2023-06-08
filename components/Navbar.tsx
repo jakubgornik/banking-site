@@ -45,7 +45,12 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <nav className="flex w-full items-center justify-around border-b border-b-slate-900 backdrop-blur-sm transition-all mobile:py-8 sm:py-0">
-          <Link scroll={false} href="#home" className="px-8">
+          <Link
+            scroll={false}
+            href="#home"
+            className="px-8"
+            aria-label="Back to the top"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="139"
@@ -88,27 +93,29 @@ const Navbar = () => {
           </Link>
 
           <ul className="flex cursor-pointer space-x-4 font-medium text-white mobile:hidden sm:flex">
-            <Link scroll={false} href="#home">
-              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+            <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+              <Link scroll={false} href="#home">
                 Home
-              </li>
-            </Link>
+              </Link>
+            </li>
 
-            <Link scroll={false} href="#about">
-              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+            <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+              <Link scroll={false} href="#about">
                 About
-              </li>
-            </Link>
-            <Link scroll={false} href="#reviews">
-              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+              </Link>
+            </li>
+
+            <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+              <Link scroll={false} href="#reviews">
                 Reviews
-              </li>
-            </Link>
-            <Link scroll={false} href="#events">
-              <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+              </Link>
+            </li>
+
+            <li className="border-b border-b-transparent   py-8 transition duration-300 hover:border-b hover:border-b-mint hover:text-mint">
+              <Link scroll={false} href="#events">
                 Events
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
           <button className="h-12 w-40 rounded-full border border-mint   font-medium  text-white shadow-2xl transition-all duration-1000 hover:bg-mint hover:bg-opacity-60 mobile:hidden sm:block">
             <Link scroll={false} href="#contact">

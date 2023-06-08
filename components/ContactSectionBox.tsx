@@ -28,7 +28,7 @@ const ContactSectionBox = ({ title }: Props) => {
                 fill="#39E8EA"
               />
             </svg>
-            <h5 className=" text-2xl font-bold ">{title}</h5>
+            <h3 className=" text-2xl font-bold ">{title}</h3>
             <div className="relative">
               <div className="absolute top-2 -left-4 h-2 w-2 rounded-full bg-mint"></div>
               <p>

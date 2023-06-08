@@ -14,9 +14,9 @@ const BoxItem = ({ img, description, title }: Props) => {
         <Image src={img} alt="supporting icon" width={20} height={20} />
       </div>
       <div className="flex flex-col ">
-        <h4 className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text text-left  text-xl font-bold  text-transparent">
+        <h3 className="bg-gradient-to-r from-[#1D2B41] to-mint bg-clip-text text-left  text-xl font-bold  text-transparent">
           {title}
-        </h4>
+        </h3>
         <p className="max-w-2xl text-white">{description}</p>
       </div>
     </div>
