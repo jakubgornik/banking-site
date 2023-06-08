@@ -40,7 +40,7 @@ const SwiperSection = () => {
       <div id="reviews" className="w-full pb-28  ">
         <motion.div
           className="px-10 lg:px-16 xl:px-20"
-          initial={{ y: -25, opacity: 0 }}
+          initial={{ y: 25, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

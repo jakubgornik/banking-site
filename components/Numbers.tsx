@@ -5,7 +5,7 @@ const Numbers = () => {
   return (
     <div id="about" className="w-full">
       <motion.div
-        initial={{ y: -25, opacity: 0 }}
+        initial={{ y: 25, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

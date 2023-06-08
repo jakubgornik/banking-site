@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div id="home" className="w-full">
       <motion.div
-        initial={{ y: -25, opacity: 0.1 }}
+        initial={{ y: 25, opacity: 0.1 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
