@@ -22,7 +22,11 @@ const HamburgerMenu = () => {
     }, 300);
   };
   return (
-    <button onClick={clickHandler}>
+    <button
+      id="hamburger-menu"
+      aria-label="hamburger-menu"
+      onClick={clickHandler}
+    >
       <svg width="30" height="30" viewBox="0 0 24 24">
         <motion.path stroke="#FFFFFF" animate={animation} variants={path1} />
         <motion.path stroke="#FFFFFF" animate={animation} variants={path2} />
