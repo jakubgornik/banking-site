@@ -35,7 +35,7 @@ const Form = () => {
   }, [scrollY]);
 
   return (
-    <div className="relative mb-28 w-full ">
+    <div id="contact" className="relative mb-28 w-full ">
       <div
         className={`${isFixed ? "fixed " : "absolute"}  ${
           isBottom && !isFixed ? "bottom-[4rem]" : "top-[5.5rem]"
