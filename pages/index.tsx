@@ -7,6 +7,7 @@ import GridSection from "@/components/GridSection";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import Head from "next/head";
+import NavigateUp from "@/components/NavigateUp";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <SwiperSection />
         <GridSection />
         <Footer />
+        <NavigateUp />
       </main>
     </>
   );
