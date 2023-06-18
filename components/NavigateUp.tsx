@@ -28,7 +28,9 @@ const NavigateUp = () => {
     <div
       onClick={handleClick}
       className={`fixed top-[90%] right-0 z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center border-2 border-mint bg-transparent duration-500 hover:bg-opacity-50 lg:right-[20px]  ${
-        isFixed ? "translate-x-0 " : "translate-x-[100px]"
+        isFixed
+          ? "animate-opacity-desktop translate-y-0 sm:translate-x-0 "
+          : "animate-opacity-mobile translate-y-[100px] sm:translate-x-[100px] sm:translate-y-0"
       }`}
     >
       <svg
